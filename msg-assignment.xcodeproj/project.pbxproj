@@ -21,6 +21,8 @@
 		7759605429D2B06400C1C8B4 /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7759605329D2B06400C1C8B4 /* AppFlow.swift */; };
 		7759605829D2B61500C1C8B4 /* MainFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7759605729D2B61500C1C8B4 /* MainFlow.swift */; };
 		7759605A29D2B64400C1C8B4 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7759605929D2B64400C1C8B4 /* SignInViewModel.swift */; };
+		7759605F29D2BAC600C1C8B4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7759605E29D2BAC600C1C8B4 /* BaseViewController.swift */; };
+		7759606129D2BAFB00C1C8B4 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7759606029D2BAFB00C1C8B4 /* BaseViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		7759605329D2B06400C1C8B4 /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
 		7759605729D2B61500C1C8B4 /* MainFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlow.swift; sourceTree = "<group>"; };
 		7759605929D2B64400C1C8B4 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		7759605E29D2BAC600C1C8B4 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		7759606029D2BAFB00C1C8B4 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +183,7 @@
 		7759605C29D2B67E00C1C8B4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7759605E29D2BAC600C1C8B4 /* BaseViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 		7759605D29D2B68200C1C8B4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				7759606029D2BAFB00C1C8B4 /* BaseViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -278,6 +284,8 @@
 				7759605229D2B04E00C1C8B4 /* MAStep.swift in Sources */,
 				7759602429D2662100C1C8B4 /* AppDelegate.swift in Sources */,
 				7759605429D2B06400C1C8B4 /* AppFlow.swift in Sources */,
+				7759606129D2BAFB00C1C8B4 /* BaseViewModel.swift in Sources */,
+				7759605F29D2BAC600C1C8B4 /* BaseViewController.swift in Sources */,
 				7759602629D2662100C1C8B4 /* SceneDelegate.swift in Sources */,
 				7759605829D2B61500C1C8B4 /* MainFlow.swift in Sources */,
 			);
