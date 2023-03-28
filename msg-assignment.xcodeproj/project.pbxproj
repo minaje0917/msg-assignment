@@ -24,6 +24,14 @@
 		7759605F29D2BAC600C1C8B4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7759605E29D2BAC600C1C8B4 /* BaseViewController.swift */; };
 		7759606129D2BAFB00C1C8B4 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7759606029D2BAFB00C1C8B4 /* BaseViewModel.swift */; };
 		7759606429D2C6F500C1C8B4 /* MATextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7759606329D2C6F500C1C8B4 /* MATextField.swift */; };
+		7759606D29D2D70300C1C8B4 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7759606C29D2D70300C1C8B4 /* SignUpViewController.swift */; };
+		7759606F29D2D72500C1C8B4 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7759606E29D2D72500C1C8B4 /* SignUpViewModel.swift */; };
+		7759607129D2D73700C1C8B4 /* ForgotPwViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7759607029D2D73700C1C8B4 /* ForgotPwViewController.swift */; };
+		7759607529D2D75100C1C8B4 /* ForgotPwViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7759607429D2D75100C1C8B4 /* ForgotPwViewModel.swift */; };
+		7759607A29D2D76F00C1C8B4 /* ForgotIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7759607929D2D76F00C1C8B4 /* ForgotIdViewController.swift */; };
+		7759607C29D2D77900C1C8B4 /* ForgotViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7759607B29D2D77900C1C8B4 /* ForgotViewModel.swift */; };
+		7759608029D2D93D00C1C8B4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7759607F29D2D93D00C1C8B4 /* MainViewController.swift */; };
+		7759608229D2D95B00C1C8B4 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7759608129D2D95B00C1C8B4 /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +49,14 @@
 		7759605E29D2BAC600C1C8B4 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		7759606029D2BAFB00C1C8B4 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		7759606329D2C6F500C1C8B4 /* MATextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MATextField.swift; sourceTree = "<group>"; };
+		7759606C29D2D70300C1C8B4 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		7759606E29D2D72500C1C8B4 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		7759607029D2D73700C1C8B4 /* ForgotPwViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPwViewController.swift; sourceTree = "<group>"; };
+		7759607429D2D75100C1C8B4 /* ForgotPwViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPwViewModel.swift; sourceTree = "<group>"; };
+		7759607929D2D76F00C1C8B4 /* ForgotIdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotIdViewController.swift; sourceTree = "<group>"; };
+		7759607B29D2D77900C1C8B4 /* ForgotViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotViewModel.swift; sourceTree = "<group>"; };
+		7759607F29D2D93D00C1C8B4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7759608129D2D95B00C1C8B4 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +113,9 @@
 		7759604929D2AF9C00C1C8B4 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				7759606929D2D6DA00C1C8B4 /* Auth */,
+				7759606629D2D6C200C1C8B4 /* Main */,
 				7759605B29D2B67400C1C8B4 /* Base */,
-				7759604A29D2AFAD00C1C8B4 /* SignIn */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -207,6 +224,117 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		7759606529D2D6B900C1C8B4 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				7759606B29D2D6F700C1C8B4 /* View */,
+				7759606A29D2D6F300C1C8B4 /* ViewModel */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		7759606629D2D6C200C1C8B4 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7759607E29D2D93200C1C8B4 /* ViewModel */,
+				7759607D29D2D92E00C1C8B4 /* VIew */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7759606729D2D6C900C1C8B4 /* ForgotId */ = {
+			isa = PBXGroup;
+			children = (
+				7759607829D2D75E00C1C8B4 /* ViewModel */,
+				7759607629D2D75400C1C8B4 /* View */,
+			);
+			path = ForgotId;
+			sourceTree = "<group>";
+		};
+		7759606829D2D6D200C1C8B4 /* ForgotPw */ = {
+			isa = PBXGroup;
+			children = (
+				7759607329D2D74100C1C8B4 /* View */,
+				7759607229D2D73C00C1C8B4 /* ViewModel */,
+			);
+			path = ForgotPw;
+			sourceTree = "<group>";
+		};
+		7759606929D2D6DA00C1C8B4 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				7759606529D2D6B900C1C8B4 /* SignUp */,
+				7759604A29D2AFAD00C1C8B4 /* SignIn */,
+				7759606829D2D6D200C1C8B4 /* ForgotPw */,
+				7759606729D2D6C900C1C8B4 /* ForgotId */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		7759606A29D2D6F300C1C8B4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7759606E29D2D72500C1C8B4 /* SignUpViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7759606B29D2D6F700C1C8B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7759606C29D2D70300C1C8B4 /* SignUpViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7759607229D2D73C00C1C8B4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7759607429D2D75100C1C8B4 /* ForgotPwViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7759607329D2D74100C1C8B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7759607029D2D73700C1C8B4 /* ForgotPwViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7759607629D2D75400C1C8B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7759607929D2D76F00C1C8B4 /* ForgotIdViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7759607829D2D75E00C1C8B4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7759607B29D2D77900C1C8B4 /* ForgotViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7759607D29D2D92E00C1C8B4 /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				7759607F29D2D93D00C1C8B4 /* MainViewController.swift */,
+			);
+			path = VIew;
+			sourceTree = "<group>";
+		};
+		7759607E29D2D93200C1C8B4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7759608129D2D95B00C1C8B4 /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -290,16 +418,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7759606D29D2D70300C1C8B4 /* SignUpViewController.swift in Sources */,
 				7759602829D2662100C1C8B4 /* SignInViewController.swift in Sources */,
 				7759606429D2C6F500C1C8B4 /* MATextField.swift in Sources */,
 				7759605A29D2B64400C1C8B4 /* SignInViewModel.swift in Sources */,
 				7759605229D2B04E00C1C8B4 /* MAStep.swift in Sources */,
 				7759602429D2662100C1C8B4 /* AppDelegate.swift in Sources */,
 				7759605429D2B06400C1C8B4 /* AppFlow.swift in Sources */,
+				7759608029D2D93D00C1C8B4 /* MainViewController.swift in Sources */,
 				7759606129D2BAFB00C1C8B4 /* BaseViewModel.swift in Sources */,
+				7759607129D2D73700C1C8B4 /* ForgotPwViewController.swift in Sources */,
 				7759605F29D2BAC600C1C8B4 /* BaseViewController.swift in Sources */,
+				7759607A29D2D76F00C1C8B4 /* ForgotIdViewController.swift in Sources */,
+				7759607529D2D75100C1C8B4 /* ForgotPwViewModel.swift in Sources */,
 				7759602629D2662100C1C8B4 /* SceneDelegate.swift in Sources */,
+				7759607C29D2D77900C1C8B4 /* ForgotViewModel.swift in Sources */,
+				7759606F29D2D72500C1C8B4 /* SignUpViewModel.swift in Sources */,
 				7759605829D2B61500C1C8B4 /* MainFlow.swift in Sources */,
+				7759608229D2D95B00C1C8B4 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
