@@ -40,22 +40,39 @@ class MainFlow: Flow {
     }
     
     private func coordinateToSignIn() -> FlowContributors {
-//        let vm =
-//        let vc = SignInViewController()
-//        self.rootViewController.setViewControllers([vc], animated: false)
-//        return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: vm))
+        let vm = SignInViewModel()
+        let vc = SignInViewController(vm)
+        self.rootViewController.setViewControllers([vc], animated: true)
+        return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: vm))
     }
     
     private func navigateToSignUp() -> FlowContributors {
+        let vm = SignUpViewModel()
+        let vc = SignUpViewController(vm)
+        self.rootViewController.pushViewController(vc, animated: true)
+        return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: vm))
     }
-    
+
     private func navigateToForgotId() -> FlowContributors {
+        let vm = ForgotIdViewModel()
+        let vc = ForgotIdViewController(vm)
+        self.rootViewController.present(vc, animated: true)
+        return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: vm))
     }
-    
+
     private func navigateToForgotPw() -> FlowContributors {
+        let vm = ForgotPwViewModel()
+        let vc = ForgotPwViewController(vm)
+        vc.modalPresentationStyle = .fullScreen
+        self.rootViewController.present(vc, animated: true)
+        return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: vm))
     }
-    
+
     private func navigateToMain() -> FlowContributors {
+        let vm = MainViewModel()
+        let vc = MainViewController(vm)
+        self.rootViewController.setViewControllers([vc], animated: true)
+        return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: vm))
 
     }
 }

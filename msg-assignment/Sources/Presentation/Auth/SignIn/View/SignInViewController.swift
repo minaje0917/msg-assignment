@@ -15,6 +15,17 @@ final class SignInViewController: BaseViewController<SignInViewModel> {
     override func viewDidLoad() {
         self.navigationItem.title = "로그인"
         super.viewDidLoad()
+        bindViewModel()
+    }
+    
+    private func bindViewModel() {
+        let input = SignInViewModel.Input(
+            signInButtonTap: signInButton.rx.tap.asObservable(),
+            notMemberButtonTap: notMemberButton.rx.tap.asObservable(),
+            forgotIdButtonTap: forgotIdButton.rx.tap.asObservable(),
+            forgotPwButtonTap: forgotPwButton.rx.tap.asObservable()
+        )
+        viewModel.transVC(input: input)
     }
     
     private let dotoriIcon = UIImageView().then {
