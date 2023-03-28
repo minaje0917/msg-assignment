@@ -7,12 +7,17 @@
 
 import RxFlow
 
-enum MAStep {
+enum MAStep: Step {
     // MARK: SignIn
-    case SignInIsRequired
+    case signInIsRequired
     
     // MARK: SignUp
-    case SignUpIsRequired
+    case signUpIsRequired
     
-    // MARK: 
+    // MARK: Forgot
+    case forgotIdIsRequired
+    case forgotPwIsRequired
+    
+    // MARK: Main
+    case mainIsRequired
 }
