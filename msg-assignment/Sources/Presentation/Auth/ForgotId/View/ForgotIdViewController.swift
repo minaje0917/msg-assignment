@@ -11,6 +11,7 @@ import SnapKit
 import Then
 
 final class ForgotIdViewController: BaseViewController<ForgotIdViewModel> {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -29,8 +30,26 @@ final class ForgotIdViewController: BaseViewController<ForgotIdViewModel> {
         )
     }
     
+    private lazy var backButton = UIButton().then {
+        $0.setTitleColor(
+            UIColor.black,
+            for: .normal
+        )
+        $0.backgroundColor = UIColor(
+            red: 1,
+            green: 1,
+            blue: 1,
+            alpha: 0
+        )
+        $0.setImage(UIImage(named: "XButton.svg"), for: .normal)
+    }
+    
+    @objc func tap() {
+        
+    }
+    
     override func addView() {
-        [text].forEach {
+        [text, backButton].forEach {
             view.addSubview($0)
         }
     }
@@ -38,6 +57,10 @@ final class ForgotIdViewController: BaseViewController<ForgotIdViewModel> {
     override func setLayout() {
         text.snp.makeConstraints {
             $0.center.equalToSuperview()
+        }
+        backButton.snp.makeConstraints {
+            $0.leading.equalToSuperview().offset(32)
+            $0.top.equalToSuperview().offset(32)
         }
     }
 }
