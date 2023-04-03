@@ -99,7 +99,7 @@ final class SignInViewController: BaseViewController<SignInViewModel> {
         $0.leftPadding(width: 12)
     }
     
-    private lazy var forgotIdButton = UIButton().then {
+    private var forgotIdButton = UIButton().then {
         let text = NSAttributedString(string: "아이디 찾기")
         $0.setAttributedTitle(
             text,
@@ -140,7 +140,7 @@ final class SignInViewController: BaseViewController<SignInViewModel> {
         )
     }
     
-    private lazy var forgotPwButton = UIButton().then {
+    private var forgotPwButton = UIButton().then {
         let text = NSAttributedString(string: "비밀번호 재설정")
         $0.setAttributedTitle(
             text,
@@ -187,7 +187,7 @@ final class SignInViewController: BaseViewController<SignInViewModel> {
         )
     }
     
-    private lazy var notMemberButton = UIButton().then {
+    private var notMemberButton = UIButton().then {
         let text = NSAttributedString(string: "회원가입")
         $0.setAttributedTitle(
             text,
@@ -215,7 +215,7 @@ final class SignInViewController: BaseViewController<SignInViewModel> {
         $0.alignment = .center
     }
     
-    private lazy var signInButton = UIButton().then {
+    private var signInButton = UIButton().then {
         let text = NSAttributedString(string: "로그인")
         $0.setAttributedTitle(
             text,

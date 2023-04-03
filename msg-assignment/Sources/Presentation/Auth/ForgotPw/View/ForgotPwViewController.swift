@@ -29,7 +29,7 @@ final class ForgotPwViewController: BaseViewController<ForgotPwViewModel> {
         )
     }
     
-    private lazy var backButton = UIButton().then {
+    private var backButton = UIButton().then {
         $0.setTitleColor(
             UIColor.black,
             for: .normal
